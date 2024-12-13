@@ -14,14 +14,12 @@ def read_images(path):
         num_rows, num_cols = struct.unpack('>II', f.read(8))
         num_pixels = num_rows * num_cols
         data = np.frombuffer(f.read(), dtype='uint8').reshape(num_images, num_pixels, 1)
-        ic(f"{path} : {data.shape}")
     return data
 
 def read_labels(path):
     with gzip.open(path, 'rb') as f:
         f.read(8)
         data = np.frombuffer(f.read(), dtype='uint8')
-        ic(f"{path} : {data.shape}")
     return data
 
 def load_data():
@@ -35,12 +33,8 @@ def load_data():
 def load_data_wrapper():
     train_inputs, train_outputs, test_inputs, test_outputs = load_data()
     train_data = zip(train_inputs, [convert_vector(output) for output in train_outputs])
-    ic(next(train_data)[0].shape)
-    ic(next(train_data)[1].shape)
     test_data = zip(test_inputs, test_outputs)
-    ic(next(test_data)[0].shape)
-    ic(next(test_data)[1].shape)
-    return train_data, test_data
+    return list(train_data), list(test_data)
 
 def convert_vector(output):
     vector = np.zeros((10, 1))
