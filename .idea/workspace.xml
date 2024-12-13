@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc558807-7e05-475f-9c26-a2f4488a2ebe" name="Changes" comment="初始化项目" />
+    <list default="true" id="bc558807-7e05-475f-9c26-a2f4488a2ebe" name="Changes" comment="finish network">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/mnist.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/mnist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/networktest.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/networktest.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,15 +46,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.minist.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.main.executor": "Run",
+    "Python.minist.executor": "Run",
+    "Python.network.executor": "Run",
+    "Python.networktest.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="DigitLearn" />
@@ -131,7 +137,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734017294309</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="finish network">
+      <option name="closed" value="true" />
+      <created>1734107477793</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1734107477793</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -147,6 +161,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="初始化项目" />
-    <option name="LAST_COMMIT_MESSAGE" value="初始化项目" />
+    <MESSAGE value="finish network" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish network" />
   </component>
 </project>

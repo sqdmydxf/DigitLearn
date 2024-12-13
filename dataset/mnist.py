@@ -14,6 +14,9 @@ def read_images(path):
         num_rows, num_cols = struct.unpack('>II', f.read(8))
         num_pixels = num_rows * num_cols
         data = np.frombuffer(f.read(), dtype='uint8').reshape(num_images, num_pixels, 1)
+        #归一化处理
+        data.astype(np.float32)
+        data = data / 255.0
     return data
 
 def read_labels(path):
